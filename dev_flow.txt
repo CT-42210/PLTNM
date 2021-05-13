@@ -1,3 +1,4 @@
 build the installer file containing: creation of profile directory, creation of settings, account, and profile list .txt files
 build the launcher, that scans for setup.txt to read the line "setup completion = true." if the program finds the file setup.txt, it continues to attempt to read the file. if the program reads the variable correctly, the program continues to load. if it doesent say true, the file will ask wether to continue to install, or to re-install. if the program doesent find setup.txt at all, the program launches setup.py.
-build the profile manager. this will create, delete, open, and use profiles. here, you can also make a temporary profile for the specific instance. in the profiles, are these things: payment, 
+build the profile manager. this will create, delete, open, and use profiles. here, you can also make a temporary profile for the specific instance. in the profiles, are these things: payment, shipping, name's, sneaker sizes, and sys info, like delays, instances, the url's, and times to be executed. 
+build the instance cloner. 
