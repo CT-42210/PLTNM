@@ -5,3 +5,5 @@ edit 1: currently, there is nothing here, as we are starting. gonna try to take 
 ----------------------------------------------------
 edit 2: setup file works: just uploaded. this creates the directory for the profiles and also creates necicary settings files.
 ----------------------------------------------------
+edit 3: launcher.py is completed for now, and functions correctly with setup.py
+----------------------------------------------------
