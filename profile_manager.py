@@ -1,5 +1,5 @@
 import os
-import json
+import easter_eggs
 
 def profile_list():
     parent_dir = os.getcwd()
@@ -25,6 +25,14 @@ def user_input():
     def import_handler():
         importer()
 
+    def troll_handler():
+        easter_eggs.troll()
+        user_input()
+
+    def floppa_handler():
+        easter_eggs.floppa()
+        user_input()
+
     print("what do you want to do?")
     question = input(" \n type [1] to view/edit/create profiles, \n type [2] to execute a profile, \n "
                      "type [3] to import/export profiles. \n \n $")
@@ -32,7 +40,9 @@ def user_input():
     handlers = {
         '1': edit_handler,
         '2': exec_handler,
-        '3': import_handler
+        '3': import_handler,
+        'troll': troll_handler,
+        'floppa': floppa_handler
     }
 
     if question in handlers:
@@ -76,6 +86,14 @@ def profile_editor():
     def create_handler():
         print("to profile file")
 
+    def troll_handler():
+        easter_eggs.troll()
+        profile_editor()
+
+    def floppa_handler():
+        easter_eggs.floppa()
+        profile_editor()
+
     print("what do you want to do?")
     question = input(" \n type [1] to view a profile, \n type [2] to edit a profile, \n "
                      "type [3] to create/delete profiles. \n \n $")
@@ -83,7 +101,9 @@ def profile_editor():
     handlers = {
         '1': view_handler,
         '2': edit_handler,
-        '3': create_handler
+        '3': create_handler,
+        'troll': troll_handler,
+        'floppa': floppa_handler()
     }
 
     if question in handlers:
