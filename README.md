@@ -7,3 +7,5 @@ edit 2: setup file works: just uploaded. this creates the directory for the prof
 ----------------------------------------------------
 edit 3: launcher.py is completed for now, and functions correctly with setup.py
 ----------------------------------------------------
+edit 4: guess what! the profile manager works! i spent so many hours on this...
+----------------------------------------------------
