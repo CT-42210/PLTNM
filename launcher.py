@@ -5,6 +5,8 @@ import setup
 import homescreen
 import cooker
 import profile_manager
+import settings_manager
+import easter_eggs
 
 t = time.localtime()
 current_time = time.strftime("%H:%M:%S", t)
@@ -86,7 +88,15 @@ def usr_input():
         profile_manager.profile_list()
 
     def settings_handler():
-        print("to profile file")
+        print("to settings file")
+
+    def troll_handler():
+        easter_eggs.troll()
+        usr_input()
+
+    def floppa_handler():
+        easter_eggs.floppa()
+        usr_input()
 
     print("what do you want to do?")
     question = input(" \n type [1] to cook, \n type [2] to view/edit your profiles, \n type [3] to edit your settings. \n \n $")
@@ -94,7 +104,9 @@ def usr_input():
     handlers = {
         '1': cooker_handler,
         '2': profile_handler,
-        '3': settings_handler
+        '3': settings_handler,
+        'troll': troll_handler,
+        'floppa': floppa_handler
     }
 
     if question in handlers:
