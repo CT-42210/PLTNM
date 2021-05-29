@@ -3,6 +3,8 @@ import time
 import os
 import setup
 import homescreen
+import cooker
+import profile_manager
 
 t = time.localtime()
 current_time = time.strftime("%H:%M:%S", t)
@@ -78,10 +80,10 @@ def buffering():
 def usr_input():
 
     def cooker_handler():
-        print("to cooking file")
+        cooker.main()
 
     def profile_handler():
-        print("to profile file")
+        profile_manager.profile_list()
 
     def settings_handler():
         print("to profile file")
